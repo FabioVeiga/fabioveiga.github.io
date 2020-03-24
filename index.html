@@ -41,7 +41,7 @@
                 position: fixed;
                 bottom: 0;
                 width: 100%;
-                height: 30px;
+                height: 75px;
                 text-align: center;
                 color: lightgray;
             }
@@ -74,16 +74,19 @@
               <a class="nav-link" href="#" onclick="showDiv('experience')" id="experienceMenu">Experience</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Social Media
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="https://www.linkedin.com/in/fabio-luiz-veiga-65612731/" target="_blank"><img class="smIcons" src="linkedinIcon.png"/> LinkedIn</a>
                 <a class="dropdown-item" href="https://github.com/FabioVeiga" target="_blank"><img class="smIcons" src="githubIcon.png"/> Github</a>
                 <a class="dropdown-item" href="https://www.hackerrank.com/Fabinho" target="_blank"><img class="smIcons" src="hackerrankIcon.png"/> Hacker Rank</a>
-                <a class="dropdown-item" href="Fabio Veiga - Resume.docx" ><img class="smIcons" src="resumeIcon.png"/> Curriculum</a>
-                <a class="dropdown-item" href="mailto:fabioveiga_me@outlook.com"><img class="smIcons" src="emailIcon.jpg"/> MyEmail</a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fabio Veiga - Resume.docx" id="resume"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:fabioveiga_me@outlook.com" id="contact"></a>
             </li>
           </li>
           </ul>
@@ -108,7 +111,7 @@
               <ul style="list-style-type:none;">
                 <li><b><a href="http://www.ibtcollege.com/" target="_blank">IBT College</a></b></li>
                 <li>MICROSOFT.NET TECHNOLOGY SPECIALIST DIPLOMA</li>
-                <li<i>01/2020 - 08/2020</i></li>
+                <li><i>01/2020 - 08/2020</i></li>
               </ul>
               <ul style="list-style-type:none;">
                 <li><b><a href="https://uninove.br/" target="_blank">Universidade Nove de Julho</a></b></li>
@@ -138,8 +141,14 @@
               </ul>
             </div>
           </div>
-          <div id="footer" class="bg-dark" >
-            <p>© 2020-<label id="yearCurrent"></label> - CopyRight - Fabio Luiz Veiga</p>
+          <div id="footer" class="bg-dark">
+            <br>
+            <p>
+              © 2020-<label id="yearCurrent"></label> - CopyRight - Fabio Luiz Veiga - 
+                <a href="https://www.linkedin.com/in/fabio-luiz-veiga-65612731/" target="_blank"><img class="smIcons" src="linkedinIcon.png"/></a>
+                <a href="https://github.com/FabioVeiga" target="_blank"><img class="smIcons" src="githubIcon.png"/></a>
+                <a href="https://www.hackerrank.com/Fabinho" target="_blank"><img class="smIcons" src="hackerrankIcon.png"/></a>
+              </p>
           </div>
     </body>
 </html>
@@ -167,6 +176,9 @@
         document.getElementById("experienceMenu").innerHTML = "Experience";
         document.getElementById("experienceH1").innerHTML = "Experience";
         document.getElementById("resume").innerHTML = "Resumé";
+        document.getElementById("contact").innerHTML = "Contact";
+        document.getElementById("navbardrop").innerHTML = "Social Media";
+        
       }else{
         document.getElementById("whoIamParagraph").innerHTML = "Trabalho há mais de 11 anos na área de TI e no que tange sistemas trabalho há quase 8 anos. Comecei minha trajetória como suporte técnico que me permitiu entender as necessidades dos usuários e isso me proporcionou como analista de sistema à empenhar minhas energias trazendo qualidade nos sistemas e em sua utilização com melhores desempenho, funções, usabilidade e etc. ";
         document.getElementById("hobbiesParagraph").innerHTML = "No meu tempo livre, adoro ler livros, assistir filmes e séries e jogar. Eu treino pelo menos quatro vezes por semana e no Brasil costumava jogar futebol semanalmente. Além disso, gosto de ler notícias sobre tecnologia, variedade e esportes. É importante que eu esteja atualizado sobre o que está acontecendo ao redor do mundo";
@@ -175,6 +187,8 @@
         document.getElementById("experienceMenu").innerHTML = "Experiência";
         document.getElementById("experienceH1").innerHTML = "Experiência";
         document.getElementById("resume").innerHTML = "Curriculum";
+        document.getElementById("contact").innerHTML = "Contato";
+        document.getElementById("navbardrop").innerHTML = "Mídias Sociais";
       }
     }
 
