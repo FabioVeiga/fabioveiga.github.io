@@ -16,12 +16,9 @@
                 height: 100px;
                 border-radius: 100% ;
             }
-            #divMain{
-              height: 400px;
-            }
             #whoIam, #hobbies, #education, #experience{
-              margin-top: 150px;
-              padding: 50px 0 200px 100px;
+              margin-top: 15px;
+              padding: 50px 0 0 50px;
               height: 400px;
               opacity: 1;
               animation-name: fadeInOpacity;
@@ -40,67 +37,74 @@
                 opacity: 1;
               }
             }
+            #footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+                text-align: center;
+                color: lightgray;
+            }
             img.smIcons {
                 width: 20px;
                 height: 20px;
             }
             img.flag{
-              width: 20px;
-              height: 20px;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
             }
         </style>
     </head>
     <body onload="changeLanguage('en')">
-        <nav class="navbar navbar-inverse navbar-expand-md bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#" onclick="showDiv('whoIam')"><img id="profilePhoto" src="photo.jpg" alt="@FabioVeiga"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="nav navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="showDiv('hobbies')">Hobbies</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="showDiv('education')" id="educationMenu"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="showDiv('experience')" id="experienceMenu">Experience</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Social Media
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="https://www.linkedin.com/in/fabio-luiz-veiga-65612731/" target="_blank"><img class="smIcons" src="linkedinIcon.png"/> LinkedIn</a>
-                      <a class="dropdown-item" href="https://github.com/FabioVeiga" target="_blank"><img class="smIcons" src="githubIcon.png"/> Gighub</a>
-                      <a class="dropdown-item" href="https://www.hackerrank.com/Fabinho" target="_blank"><img class="smIcons" src="hackerrankIcon.png"/> Hacker Rank</a>
-                      <a class="dropdown-item" href="mailto:fabioveiga_me@outlook.com"><img class="smIcons" src="emailIcon.jpg"/> MyEmail</a>
-                    </div>
-                  </li>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" onclick="changeLanguage('en')"><img class="flag" src="flag_usa.png"></a></li>
-                <li><a href="#" onclick="changeLanguage('pt')"><img class="flag" src="flag_brasil.png"></a></li> 
-              </ul>
-            </div>  
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+        <a class="navbar-brand" onclick="showDiv('whoIam')"><img id="profilePhoto" src="photo.jpg" alt="@FabioVeiga"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showDiv('hobbies')">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showDiv('education')" id="educationMenu"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showDiv('experience')" id="experienceMenu">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Social Media
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.linkedin.com/in/fabio-luiz-veiga-65612731/" target="_blank"><img class="smIcons" src="linkedinIcon.png"/> LinkedIn</a>
+                <a class="dropdown-item" href="https://github.com/FabioVeiga" target="_blank"><img class="smIcons" src="githubIcon.png"/> Github</a>
+                <a class="dropdown-item" href="https://www.hackerrank.com/Fabinho" target="_blank"><img class="smIcons" src="hackerrankIcon.png"/> Hacker Rank</a>
+                <a class="dropdown-item" href="Fabio Veiga - Resume.docx" ><img class="smIcons" src="resumeIcon.png"/> Curriculum</a>
+                <a class="dropdown-item" href="mailto:fabioveiga_me@outlook.com"><img class="smIcons" src="emailIcon.jpg"/> MyEmail</a>
+              </div>
+            </li>
+          </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <a href="#" onclick="changeLanguage('en')"><img class="flag" src="flag_usa.png"></a>
+            <a href="#" onclick="changeLanguage('pt')"><img class="flag" src="flag_brasil.png"></a>
+          </div>
+        </div>
+      </nav>
           
-          <nav id="divMain">
+          <div id="divMain">
             <div class="container" id="whoIam">
               <h1><b>Fabio</b> Luiz Veiga</h1>
-              <br>
               <p id="whoIamParagraph"></p>
             </div>          
             <div class="container" id="hobbies">
               <h1><b>Hobbies</b></h1>
-              <br>
               <p id="hobbiesParagraph"></p>
             </div>
             <div class="container" id="education">
               <h1 id="educationH1"><b></b></h1>
-              <br>
               <ul style="list-style-type:none;">
                 <li><b><a href="http://www.ibtcollege.com/" target="_blank">IBT College</a></b></li>
                 <li>MICROSOFT.NET TECHNOLOGY SPECIALIST DIPLOMA</li>
@@ -133,12 +137,10 @@
                 <li>SYSTEMS ANALYST</li>
               </ul>
             </div>
-          </nav>
-          <div class="footer" style="text-align: center; font-weight: bold;">
-            <br>
+          </div>
+          <div id="footer" class="bg-dark" >
             <p>© 2020-<label id="yearCurrent"></label> - CopyRight - Fabio Luiz Veiga</p>
           </div>
-          
     </body>
 </html>
 
@@ -158,12 +160,13 @@
 
     function changeLanguage(language){
       if(language == "en"){
-        document.getElementById("whoIamParagraph").innerHTML = "I have been working for over 11 years in the IT area and for systems, I have been working for almost 8 years.I started my career as technical support that allowed me to understand the needs of users and this provided me as a system analyst to commit my energies bringing quality to the systems and their use with better performance, functions, usability and etc.";;
-        document.getElementById("hobbiesParagraph").innerHTML = "In my free time I love read books, watch movies and series and play games. I work out at least four times a week and in Brazil I used to play football (soccer) weekly. Also, I like to read news about technology, variety and, sports. It's important for me to be updated about what is going on around the world";;
+        document.getElementById("whoIamParagraph").innerHTML = "I have been working for over 11 years in IT. More than 8 years as a system analyst. I started my career as technical support that allowed me to understand the needs of users and this provided me as a system analyst to commit my energies bringing quality to the systems and their use with better performance, functions, usability and etc.";
+        document.getElementById("hobbiesParagraph").innerHTML = "In my free time, I love to read books, watch movies and series and play games. I work out at least four times a week and in Brazil, I used to play football (soccer) weekly. Also, I like to read news about technology, variety and, sports. It's important for me to be updated about what is going on around the world.";
         document.getElementById("educationMenu").innerHTML = "Education";
         document.getElementById("educationH1").innerHTML = "Education";
         document.getElementById("experienceMenu").innerHTML = "Experience";
         document.getElementById("experienceH1").innerHTML = "Experience";
+        document.getElementById("resume").innerHTML = "Resumé";
       }else{
         document.getElementById("whoIamParagraph").innerHTML = "Trabalho há mais de 11 anos na área de TI e no que tange sistemas trabalho há quase 8 anos. Comecei minha trajetória como suporte técnico que me permitiu entender as necessidades dos usuários e isso me proporcionou como analista de sistema à empenhar minhas energias trazendo qualidade nos sistemas e em sua utilização com melhores desempenho, funções, usabilidade e etc. ";
         document.getElementById("hobbiesParagraph").innerHTML = "No meu tempo livre, adoro ler livros, assistir filmes e séries e jogar. Eu treino pelo menos quatro vezes por semana e no Brasil costumava jogar futebol semanalmente. Além disso, gosto de ler notícias sobre tecnologia, variedade e esportes. É importante que eu esteja atualizado sobre o que está acontecendo ao redor do mundo";
@@ -171,6 +174,7 @@
         document.getElementById("educationH1").innerHTML = "Formação Acadêmica";
         document.getElementById("experienceMenu").innerHTML = "Experiência";
         document.getElementById("experienceH1").innerHTML = "Experiência";
+        document.getElementById("resume").innerHTML = "Curriculum";
       }
     }
 
