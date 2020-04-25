@@ -9,7 +9,7 @@ var Main = function(_language = 'en'){
     let txtResume = document.getElementById('txtResume')
     let txtSkills = document.getElementById('txtSkills')
     let txtPortfolio = document.getElementById('txtPortfolio')
-    let txtContact = document.getElementById('txtContact')
+    //let txtContact = document.getElementById('txtContact')
     let txtProfession = document.getElementById('txtProfession')
     let divAboutMe = document.getElementById('divAboutMe')
     let lblBirthday = document.getElementById('lblBirthday')
@@ -47,7 +47,7 @@ var Main = function(_language = 'en'){
         txtAbout.innerHTML = 'About'
         txtResume.innerHTML = 'Resume'
         txtPortfolio.innerHTML = 'Portfolio'
-        txtContact.innerHTML = 'Contact'
+        //txtContact.innerHTML = 'Contact'
         divAboutMe.innerHTML = ''
         divAboutMe.innerHTML += `<p>I have been working for over ${new Date().getFullYear() - 2009} years in IT. More than ${new Date().getFullYear() - 2012} years as a system analyst. I started my career as technical support that allowed me to understand the needs of users and this provided me as a system analyst to commit my energies bringing quality to the systems and their use with better performance, functions, usability and etc.</p>`
         txtProfession.innerHTML = 'System analyst & Developer.'
@@ -91,7 +91,7 @@ var Main = function(_language = 'en'){
         txtSkills.innerHTML = 'Habilidades'
         txtResume.innerHTML = 'Currículo'
         txtPortfolio.innerHTML = 'Portfolío'
-        txtContact.innerHTML = 'Contato'
+        //txtContact.innerHTML = 'Contato'
         divAboutMe.innerHTML = ''
         divAboutMe.innerHTML += `<p>Trabalho há mais de ${new Date().getFullYear() - 2009} anos na área de TI e no que tange sistemas trabalho há quase ${new Date().getFullYear() - 2012} anos. Comecei minha trajetória como suporte técnico que me permitiu entender as necessidades dos usuários e isso me proporcionou como analista de sistema à empenhar minhas energias trazendo qualidade nos sistemas e em sua utilização com melhores desempenho, funções, usabilidade e etc.</p>`
         txtProfession.innerHTML = 'Analista de sistema & Desenvolvedor.'
@@ -137,7 +137,7 @@ var Main = function(_language = 'en'){
         txtSkills.innerHTML = 'Habilidades'
         txtResume.innerHTML = 'Currículum'
         txtPortfolio.innerHTML = 'Portfolio'
-        txtContact.innerHTML = 'Contacto'
+        //txtContact.innerHTML = 'Contacto'
         divAboutMe.innerHTML = ''
         divAboutMe.innerHTML += `<p>He trabajado durante más de ${new Date().getFullYear() - 2009} años en TI. Más de ${new Date().getFullYear() - 2012} años como analista de sistemas. Comencé mi carrera como soporte técnico que me permitió comprender las necesidades de los usuarios y esto me proporcionó como analista de sistemas para comprometer mis energías aportando calidad a los sistemas y su uso con un mejor rendimiento, funciones, usabilidad, etc.</p>`
         txtProfession.innerHTML = 'Analista de sistema & Desarrollador.'
